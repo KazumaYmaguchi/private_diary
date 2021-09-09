@@ -8,5 +8,5 @@ class IndexView(generic.TemplateView):
     template_name = "index.html"
 
 class InquiryView(generic.FormView):
-    template_name = "inquiry.html"
+    template_name = "diary/inquiry.html"
     form_class = InquiryForm
