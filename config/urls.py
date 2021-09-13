@@ -23,7 +23,7 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
 ]
 
-# from django.contrib.staticfiles.urls import static
-# from . import settings_common, settings_dev
+from django.contrib.staticfiles.urls import static
+from . import settings
 
-# urlpatterns += static(settings_common.MEDIA_URL,document_root=settings_dev.MEDIA_ROOT)
+urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
