@@ -25,7 +25,6 @@ class InquiryView(generic.FormView):
 
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Diary
-
 class DiaryListView(LoginRequiredMixin, generic.ListView):
     model = Diary
     template_name = 'diary_list.html'
