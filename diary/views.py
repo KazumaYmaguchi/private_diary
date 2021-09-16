@@ -53,7 +53,7 @@ class DiaryDetailView(LoginRequiredMixin, generic.DeleteView):
 
 class DiaryCreateView(LoginRequiredMixin, generic.CreateView):
     model = Diary
-    template_name = 'diary_create.html'
+    template_name = 'diary/diary_create.html'
     form_class = DiaryCreateForm
     success_url = reverse_lazy('diary:diary_list')
 
